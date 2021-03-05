@@ -35,15 +35,18 @@
     font-size: 32px;
     line-height: 48px;
 }
+
 //--/Mixins--
 
 //--Variables--
 $primary-color:#0D0D2B;
 $secondary-color:#2B076E; 
 $neutral-light-color:#F8F9FB;
+$button-color:#3671E9;
 
 $padding-vertical-sm: 70px;
 $padding-vertical: 100px;
+$button-padding: 16px 32px 16px 32px;
 //--/Variables--
 
 body {
@@ -64,6 +67,49 @@ body {
     background-color: $primary-color;
     padding-top: $padding-vertical-sm;
     padding-bottom: $padding-vertical-sm;
+    display: flex;
+    justify-content: space-between;
+    
+    .logo {
+        text-decoration: none;
+        color: white;
+        width: 135px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-transform: uppercase;
+    }
+
+    .navigation {
+        display: flex;
+        
+        .nav-wrapper {
+            display: flex;
+            list-style: none;
+            &-item{
+                margin-left: 32px;
+
+                &-link{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    
+    
+        .btns {
+            margin-left: 50px;
+            
+            .btn {
+                background-color: $button-color;
+                border: none;
+                border-radius: 32px;
+                padding: $button-padding;
+            }
+        }
+    }
+    
     
 }
 // --/Header--
