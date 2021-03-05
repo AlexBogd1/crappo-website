@@ -69,7 +69,40 @@ body {
         color: white; }
 
 .section-value-prop {
-  background-color: #0d0d2b; }
+  display: flex;
+  flex-wrap: wrap; }
+  .section-value-prop .proposition-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section-value-prop .proposition-main-content .header-prop-block {
+      width: 580px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 76px;
+      margin: 24px 0px; }
+    .section-value-prop .proposition-main-content .descr-prop {
+      width: 420px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px; }
+    .section-value-prop .proposition-main-content .button-prop {
+      width: 200px;
+      height: 44px;
+      margin-top: 24px;
+      padding: 16px 16px 16px 16px;
+      background-color: #3671e9;
+      border-radius: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      .section-value-prop .proposition-main-content .button-prop p {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px; }
 
 .section-numbers {
   background-color: #0d0d2b; }

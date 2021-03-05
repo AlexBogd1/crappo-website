@@ -139,7 +139,38 @@ body {
 
 // --Value-Prop--
 .section-value-prop {
-  background-color: $primary-color;
+  display: flex;
+  flex-wrap: wrap;
+  .proposition-main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .header-prop-block {
+          width: 580px;
+          @include rubik-header1;
+          margin: 24px 0px;
+      }
+      .descr-prop {
+          width: 420px;
+          @include rubik-normal;
+      }
+      .button-prop {
+          width: 200px;
+          height: 44px;
+          margin-top: 24px;
+          padding: 16px 16px 16px 16px;
+          background-color: $button-color;
+          border-radius: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          p {
+              @include rubik-button;
+          }
+           
+      }
+  }
 }
 // --/Value-Prop--
 
