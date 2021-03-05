@@ -10,6 +10,24 @@ body {
   width: 100%;
   background-color: #0d0d2b; }
 
+.rect-one {
+  position: absolute;
+  width: 120px;
+  height: 997.88px;
+  left: 500px;
+  top: 370px;
+  background: linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
+  transform: rotate(-120deg); }
+
+.rect-two {
+  position: absolute;
+  width: 120px;
+  height: 997.88px;
+  left: 1150px;
+  top: 300px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 34.75%, rgba(255, 255, 255, 0.01) 100%);
+  transform: rotate(-120deg); }
+
 .wrapper-white {
   background-color: #f8f9fb; }
 
