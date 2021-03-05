@@ -1,5 +1,82 @@
-$color-main: rgb(58, 63, 10);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
-body{
-    background-color: $color-main;
+//--Mixins--
+@mixin rubik-header1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
 }
+
+@mixin rubik-header2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+@mixin rubik-button {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@mixin rubik-normal {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@mixin rubik-bold {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+//--/Mixins--
+
+//--Variables--
+$primary-color:#0D0D2B;
+$secondary-color:#2B076E; 
+$neutral-light-color:#F8F9FB;
+
+$padding-vertical-sm: 70px;
+$padding-vertical: 100px;
+//--/Variables--
+
+body {
+    @include rubik-normal;
+    color: white;
+    
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: $padding-vertical;
+    padding-bottom: $padding-vertical;
+}
+
+// --Header--
+.section-header{
+    background-color: $primary-color;
+    padding-top: $padding-vertical-sm;
+    padding-bottom: $padding-vertical-sm;
+    
+}
+// --/Header--
+
+// --Value-Prop--
+.section-value-prop{
+    background-color: $primary-color;
+}
+// --/Value-Prop--
+
+// --Numbers--
+.section-numbers{
+    background-color: $primary-color;
+}
+// --/Numbers--
+
