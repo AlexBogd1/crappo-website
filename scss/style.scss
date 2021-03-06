@@ -148,3 +148,76 @@ body {
   background-color: $primary-color;
 }
 // --/Numbers--
+
+// --Calculated--
+.section-calculated {
+  background-color: $primary-color;
+  text-align: center;
+  padding-top: 100px;
+  .section-calculated-inf {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    &-header {
+      max-width: 740px;
+      @include rubik-header2;
+    }
+    &-desc {
+      max-width: 500px;
+      margin-top: 24px;
+    }
+   
+  }
+}
+// --/Calculated--
+
+//--Calculated Form
+.section-calculated-form {
+  background-color: $neutral-light-color;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  .calculated-form{
+    &-inputs {
+      display: flex;
+      justify-content: space-around;
+
+      &-text {
+        width: 400px;
+        background-color: $neutral-light-color;
+        color: black;
+        border: none;
+        border-bottom: 1px solid #E0E0E0 ;
+        font-size: 20px;
+        margin-left: 48px;
+        margin-right: 48px;
+      }
+
+      &-select {
+        width: 200px;
+        background-color: $neutral-light-color;
+        border: none;
+        border-bottom: 1px solid #E0E0E0 ;
+        font-size: 20px;
+        margin-right: 48px;
+      }
+
+      &-btn {
+        @include rubik-button;
+        color: white;
+        background-color: $button-color;
+        border-radius: 32px;
+        border: 0px;
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+//--/Calculated Form

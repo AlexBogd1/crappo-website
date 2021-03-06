@@ -73,3 +73,63 @@ body {
 
 .section-numbers {
   background-color: #0d0d2b; }
+
+.section-calculated {
+  background-color: #0d0d2b;
+  text-align: center;
+  padding-top: 100px; }
+  .section-calculated .section-calculated-inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-calculated .section-calculated-inf-header {
+      max-width: 740px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px; }
+    .section-calculated .section-calculated-inf-desc {
+      max-width: 500px;
+      margin-top: 24px; }
+
+.section-calculated-form {
+  background-color: #f8f9fb;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px; }
+  .section-calculated-form .calculated-form-inputs {
+    display: flex;
+    justify-content: space-around; }
+    .section-calculated-form .calculated-form-inputs-text {
+      width: 400px;
+      background-color: #f8f9fb;
+      color: black;
+      border: none;
+      border-bottom: 1px solid #E0E0E0;
+      font-size: 20px;
+      margin-left: 48px;
+      margin-right: 48px; }
+    .section-calculated-form .calculated-form-inputs-select {
+      width: 200px;
+      background-color: #f8f9fb;
+      border: none;
+      border-bottom: 1px solid #E0E0E0;
+      font-size: 20px;
+      margin-right: 48px; }
+    .section-calculated-form .calculated-form-inputs-btn {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: white;
+      background-color: #3671e9;
+      border-radius: 32px;
+      border: 0px;
+      padding: 16px 32px; }
