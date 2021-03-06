@@ -31,7 +31,7 @@
 
 @mixin rubik-bold {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 32px;
   line-height: 48px;
 }
@@ -88,7 +88,7 @@ body {
     text-transform: uppercase;
 
     .logo-img {
-        margin-right: 16px;
+      margin-right: 16px;
     }
   }
 
@@ -120,7 +120,6 @@ body {
         padding-right: 24px;
         font-weight: 500;
         font-size: 16px;
-        
       }
       .btn {
         background-color: $button-color;
@@ -155,7 +154,7 @@ body {
   text-align: center;
   padding-top: 100px;
   .section-calculated-inf {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     &-header {
@@ -166,7 +165,6 @@ body {
       max-width: 500px;
       margin-top: 24px;
     }
-   
   }
 }
 // --/Calculated--
@@ -180,21 +178,25 @@ body {
   left: 0;
   right: 0;
   max-width: 940px;
+  height: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 16px;
-  .calculated-form{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .calculated-form {
     &-inputs {
       display: flex;
       justify-content: space-around;
-
+      flex-wrap: wrap;
       &-text {
         width: 400px;
         background-color: $neutral-light-color;
         color: black;
         border: none;
-        border-bottom: 1px solid #E0E0E0 ;
+        border-bottom: 1px solid #e0e0e0;
         font-size: 20px;
         margin-left: 48px;
         margin-right: 48px;
@@ -204,7 +206,7 @@ body {
         width: 200px;
         background-color: $neutral-light-color;
         border: none;
-        border-bottom: 1px solid #E0E0E0 ;
+        border-bottom: 1px solid #e0e0e0;
         font-size: 20px;
         margin-right: 48px;
       }
@@ -216,6 +218,32 @@ body {
         border-radius: 32px;
         border: 0px;
         padding: 16px 32px;
+      }
+    }
+
+    &-desc {
+      margin-top: 100px;
+      margin-left: 48px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      &-revenue {
+        color: #3671e9;
+        font-weight: 500;
+        margin-bottom: 0px;
+      }
+      &-value {
+        color: black;
+        @include rubik-bold;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        span {
+          color: #3671e9;
+        }
+      }
+      &-text {
+        color: black;
+        margin-top: 0px;
       }
     }
   }
