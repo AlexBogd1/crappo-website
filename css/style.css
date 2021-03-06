@@ -73,3 +73,32 @@ body {
 
 .section-numbers {
   background-color: #0d0d2b; }
+
+.section-why {
+  background-color: #0d0d2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section-why-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .section-why-inf .section-why-header {
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      margin-bottom: 24px; }
+    .section-why-inf .section-why-desc {
+      margin-bottom: 30px; }
+    .section-why-inf .section-why-btn {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 32px;
+      background-color: #3671e9;
+      border: none; }

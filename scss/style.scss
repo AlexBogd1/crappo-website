@@ -148,3 +148,37 @@ body {
   background-color: $primary-color;
 }
 // --/Numbers--
+
+// --Section-why--
+.section-why {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .section-why-header{
+            @include rubik-header2;
+            margin-bottom: 24px;
+        }
+
+        .section-why-desc {
+            margin-bottom: 30px;
+        }
+
+        .section-why-btn {
+            @include rubik-button;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 32px;
+            background-color: $button-color;
+            border: none;
+        }
+    }
+  }
+  // --/Section-why--
