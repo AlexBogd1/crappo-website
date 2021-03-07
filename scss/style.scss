@@ -88,7 +88,7 @@ body {
     text-transform: uppercase;
 
     .logo-img {
-        margin-right: 16px;
+      margin-right: 16px;
     }
   }
 
@@ -120,7 +120,6 @@ body {
         padding-right: 24px;
         font-weight: 500;
         font-size: 16px;
-        
       }
       .btn {
         background-color: $button-color;
@@ -148,3 +147,26 @@ body {
   background-color: $primary-color;
 }
 // --/Numbers--
+
+//--Cryptocurrencies
+.section-cryptocurrencies {
+  padding-top: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-header {
+    color: black;
+    @include rubik-header2;
+    text-align: center;  
+    max-width: 740px;
+    margin-bottom: 60px;
+  }
+
+  &-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+//--/Cryptocurrencies

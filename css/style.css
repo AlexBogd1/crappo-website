@@ -73,3 +73,22 @@ body {
 
 .section-numbers {
   background-color: #0d0d2b; }
+
+.section-cryptocurrencies {
+  padding-top: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-cryptocurrencies-header {
+    color: black;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    max-width: 740px;
+    margin-bottom: 60px; }
+  .section-cryptocurrencies-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
