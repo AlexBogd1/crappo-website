@@ -73,6 +73,13 @@ body {
   padding-bottom: $padding-vertical;
 }
 
+.offset-to-left {
+  position: relative;
+  right: 72px;
+  background-color: #4610AD;;
+  border-radius: 16px;
+}
+
 // --Header--
 .section-header {
   padding-top: $padding-vertical-sm;
@@ -171,6 +178,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
+    .reverse {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      position: relative;
+      right: 190px;
+      margin-right: 10px;
+    
+    }
+
     &-item {
       display: flex;
       justify-content: space-around;
@@ -195,6 +211,63 @@ body {
           border: none;
           color: white;
           @include rubik-button;
+        }
+
+        &-data {
+          display: flex;
+          width: 610px;
+          flex-direction: column;
+          background: #35068c;
+          backdrop-filter: blur(4px);
+          border-radius: 16px;
+          padding: 25px 35px;
+
+          &-sect1 {
+            display: flex;
+            justify-content: flex-end;
+            p {
+              margin-left: 70px;
+            }
+          }
+
+          &-sect2 {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 5px;
+            &-cry {
+              display: flex;
+              align-items: center;
+              
+              img {
+                width: 40px;
+                height: 40px;
+                margin-right: 16px;
+              }
+            }
+            &-price {
+              margin-left: 15px;
+            }
+            .red {
+              color: #FF7676;
+            }
+            &-change {
+              display: flex;
+              align-items: center;
+              margin-left: 5px;
+              color:  #8FFFBE;
+        
+              img{
+                width:16px;
+                height: 16px;
+                margin-right: 8px;
+              }
+            }
+
+            &-volume {
+              margin-left: 15px;
+            }
+          }
         }
       }
     }

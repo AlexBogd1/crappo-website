@@ -22,6 +22,12 @@ body {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+.offset-to-left {
+  position: relative;
+  right: 72px;
+  background-color: #4610AD;
+  border-radius: 16px; }
+
 .section-header {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -94,6 +100,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .section-feature-content .reverse {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      position: relative;
+      right: 190px;
+      margin-right: 10px; }
     .section-feature-content-item {
       display: flex;
       justify-content: space-around;
@@ -120,3 +132,43 @@ body {
           font-weight: 500;
           font-size: 18px;
           line-height: 27px; }
+        .section-feature-content-item-desc-data {
+          display: flex;
+          width: 610px;
+          flex-direction: column;
+          background: #35068c;
+          backdrop-filter: blur(4px);
+          border-radius: 16px;
+          padding: 25px 35px; }
+          .section-feature-content-item-desc-data-sect1 {
+            display: flex;
+            justify-content: flex-end; }
+            .section-feature-content-item-desc-data-sect1 p {
+              margin-left: 70px; }
+          .section-feature-content-item-desc-data-sect2 {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 5px; }
+            .section-feature-content-item-desc-data-sect2-cry {
+              display: flex;
+              align-items: center; }
+              .section-feature-content-item-desc-data-sect2-cry img {
+                width: 40px;
+                height: 40px;
+                margin-right: 16px; }
+            .section-feature-content-item-desc-data-sect2-price {
+              margin-left: 15px; }
+            .section-feature-content-item-desc-data-sect2 .red {
+              color: #FF7676; }
+            .section-feature-content-item-desc-data-sect2-change {
+              display: flex;
+              align-items: center;
+              margin-left: 5px;
+              color: #8FFFBE; }
+              .section-feature-content-item-desc-data-sect2-change img {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px; }
+            .section-feature-content-item-desc-data-sect2-volume {
+              margin-left: 15px; }
