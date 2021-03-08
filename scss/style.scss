@@ -73,6 +73,20 @@ body {
   padding-bottom: $padding-vertical;
 }
 
+.reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+      right: 180px;
+      align-self: flex-start;
+      
+      .section-feature-content-item-desc {
+        margin-right: 0px;
+        margin-left: 50px;
+      }
+      
+      
+    }
 .offset-to-left {
   position: relative;
   right: 72px;
@@ -178,24 +192,17 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    .reverse {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      position: relative;
-      right: 190px;
-      margin-right: 10px;
     
-    }
 
     &-item {
       display: flex;
       justify-content: space-around;
       margin-bottom: 120px;
-
+      flex-wrap: wrap;
       &-desc {
         max-width: 450px;
-        margin-right: 140px;
-
+        margin-right: 50px;
+        margin-bottom: 20px;;
         &-header {
           @include rubik-bold;
         }
@@ -215,7 +222,7 @@ body {
 
         &-data {
           display: flex;
-          width: 610px;
+          width: 510px;
           flex-direction: column;
           background: #35068c;
           backdrop-filter: blur(4px);
@@ -226,7 +233,7 @@ body {
             display: flex;
             justify-content: flex-end;
             p {
-              margin-left: 70px;
+              margin-left: 62px;
             }
           }
 
