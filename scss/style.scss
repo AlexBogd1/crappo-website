@@ -31,7 +31,7 @@
 
 @mixin rubik-bold {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 32px;
   line-height: 48px;
 }
@@ -62,6 +62,10 @@ body {
   background-color: $neutral-light-color;
 }
 
+.wrapper-secondary {
+  background-color: $secondary-color;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,7 +92,7 @@ body {
     text-transform: uppercase;
 
     .logo-img {
-        margin-right: 16px;
+      margin-right: 16px;
     }
   }
 
@@ -120,7 +124,6 @@ body {
         padding-right: 24px;
         font-weight: 500;
         font-size: 16px;
-        
       }
       .btn {
         background-color: $button-color;
@@ -148,3 +151,53 @@ body {
   background-color: $primary-color;
 }
 // --/Numbers--
+
+// --Features--
+.section-feature {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-header {
+    @include rubik-header2;
+    text-align: center;
+    max-width: 750px;
+    margin-bottom: 100px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 120px;
+
+      &-desc {
+        max-width: 450px;
+        margin-right: 140px;
+
+        &-header {
+          @include rubik-bold;
+        }
+        &-text {
+          max-width: 408px;
+          margin-top: 24px;
+          margin-bottom: 32px;
+        }
+        button {
+          padding: 16px 32px;
+          background-color: $button-color;
+          border-radius: 32px;
+          border: none;
+          color: white;
+          @include rubik-button;
+        }
+      }
+    }
+  }
+}
+// --/Features--
