@@ -31,7 +31,7 @@
 
 @mixin rubik-bold {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 32px;
   line-height: 48px;
 }
@@ -61,7 +61,9 @@ body {
 .wrapper-white {
   background-color: $neutral-light-color;
 }
-
+.wrapper-secondary-col {
+  background-color: $secondary-color;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,7 +90,7 @@ body {
     text-transform: uppercase;
 
     .logo-img {
-        margin-right: 16px;
+      margin-right: 16px;
     }
   }
 
@@ -120,7 +122,6 @@ body {
         padding-right: 24px;
         font-weight: 500;
         font-size: 16px;
-        
       }
       .btn {
         background-color: $button-color;
@@ -148,3 +149,72 @@ body {
   background-color: $primary-color;
 }
 // --/Numbers--
+
+//--Section-Mining
+.section-mining {
+   position: relative;
+   &-class-img {
+     position: absolute;
+     &-first {
+       top:124px;
+       left:35px;
+     }
+     &-second {
+      top:100px;
+      left: 390px;
+     }
+   }
+
+   
+  .send-email-form {
+    position: relative;
+    background-color: $button-color;
+    padding: 85px 88px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .section-mining-img{
+      position: absolute;
+      
+    }
+    .section-mining-img-vec {
+      left: 40px;
+      top:0px;
+    }
+    .section-mining-img-btc{
+      right: 0px;
+      bottom:0px; 
+    }
+    &-cont {
+      &-header {
+        @include rubik-bold;
+        max-width: 501px;
+        margin-bottom: 16px;
+      }
+      &-inform {
+        max-width: 348px;
+      }
+    }
+
+    &-input {
+      background-color: $button-color;
+      border: none;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      width: 347px;
+      outline: none;
+    }
+    &-input::placeholder {
+      color: white;
+    }
+
+    &-btn {
+      padding: 14px 32px;
+      border-radius: 32px;
+      border: none;
+      font-weight: 500;
+    }
+  }
+}
+//--/Section-Mining
