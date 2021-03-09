@@ -31,7 +31,7 @@
 
 @mixin rubik-bold {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 32px;
   line-height: 48px;
 }
@@ -149,3 +149,90 @@ body {
 }
 // --/Numbers--
 
+// --Futer--
+.section-footer{
+
+  .section-footer-gen-inf{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-logo {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-bottom: 10px;
+      img{
+        margin-right: 16px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    &-quick-links {
+      &-header {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      &-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-ul{
+          padding: 0px;
+        }
+        li {
+          list-style: none;
+          margin-bottom: 5px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        
+      }
+    }
+
+    &-resources {
+      &-header {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      &-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        &-ul{
+          padding: 0px;
+        }
+        li {
+          list-style: none;
+          margin-bottom: 5px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        
+      }
+    }
+
+    &-payment-syst{
+      &-header {
+        max-width: 355px;
+        @include rubik-bold;
+        margin-bottom: 24px;
+      }
+
+      &-icons {
+        display: flex;
+        max-width: 320px;
+        justify-content: space-between;
+      }
+    }
+
+  }
+}
+//--/Futer

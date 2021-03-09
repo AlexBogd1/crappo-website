@@ -73,3 +73,60 @@ body {
 
 .section-numbers {
   background-color: #0d0d2b; }
+
+.section-footer .section-footer-gen-inf {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section-footer .section-footer-gen-inf-logo {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px; }
+    .section-footer .section-footer-gen-inf-logo img {
+      margin-right: 16px;
+      height: 40px;
+      width: 40px; }
+  .section-footer .section-footer-gen-inf-quick-links-header {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 24px; }
+  .section-footer .section-footer-gen-inf-quick-links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .section-footer .section-footer-gen-inf-quick-links-list-ul {
+      padding: 0px; }
+    .section-footer .section-footer-gen-inf-quick-links-list li {
+      list-style: none;
+      margin-bottom: 5px; }
+      .section-footer .section-footer-gen-inf-quick-links-list li a {
+        text-decoration: none;
+        color: white; }
+  .section-footer .section-footer-gen-inf-resources-header {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 24px; }
+  .section-footer .section-footer-gen-inf-resources-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .section-footer .section-footer-gen-inf-resources-list-ul {
+      padding: 0px; }
+    .section-footer .section-footer-gen-inf-resources-list li {
+      list-style: none;
+      margin-bottom: 5px; }
+      .section-footer .section-footer-gen-inf-resources-list li a {
+        text-decoration: none;
+        color: white; }
+  .section-footer .section-footer-gen-inf-payment-syst-header {
+    max-width: 355px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px; }
+  .section-footer .section-footer-gen-inf-payment-syst-icons {
+    display: flex;
+    max-width: 320px;
+    justify-content: space-between; }
