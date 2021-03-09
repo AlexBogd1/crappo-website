@@ -81,6 +81,7 @@ body {
   .section-footer .section-footer-gen-inf-logo {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 30px;
     margin-bottom: 10px; }
     .section-footer .section-footer-gen-inf-logo img {
@@ -94,6 +95,7 @@ body {
   .section-footer .section-footer-gen-inf-quick-links-list {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start; }
     .section-footer .section-footer-gen-inf-quick-links-list-ul {
       padding: 0px; }
@@ -130,3 +132,25 @@ body {
     display: flex;
     max-width: 320px;
     justify-content: space-between; }
+
+.section-footer-soc-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 120px; }
+  .section-footer-soc-links-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .section-footer-soc-links-items-ul {
+      display: flex; }
+      .section-footer-soc-links-items-ul li {
+        list-style: none;
+        margin-right: 40px;
+        margin-bottom: 5px; }
+        .section-footer-soc-links-items-ul li a {
+          text-decoration: none;
+          color: white; }
