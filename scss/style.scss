@@ -89,11 +89,36 @@ body {
   background-color: $neutral-light-color;
 }
 
+.wrapper-secondary {
+  background-color: $secondary-color;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: $padding-vertical;
   padding-bottom: $padding-vertical;
+}
+
+.reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+      right: 180px;
+      align-self: flex-start;
+      
+      .section-feature-content-item-desc {
+        margin-right: 0px;
+        margin-left: 50px;
+      }
+      
+      
+    }
+.offset-to-left {
+  position: relative;
+  right: 72px;
+  background-color: #4610AD;;
+  border-radius: 16px;
 }
 
 // --Header--
@@ -244,6 +269,116 @@ body {
   }
 }
 // --/Numbers--
+
+
+// --Features--
+.section-feature {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-header {
+    @include rubik-header2;
+    text-align: center;
+    max-width: 750px;
+    margin-bottom: 100px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+
+    &-item {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 120px;
+      flex-wrap: wrap;
+      &-desc {
+        max-width: 450px;
+        margin-right: 50px;
+        margin-bottom: 20px;;
+        &-header {
+          @include rubik-bold;
+        }
+        &-text {
+          max-width: 408px;
+          margin-top: 24px;
+          margin-bottom: 32px;
+        }
+        button {
+          padding: 16px 32px;
+          background-color: $button-color;
+          border-radius: 32px;
+          border: none;
+          color: white;
+          @include rubik-button;
+        }
+
+        &-data {
+          display: flex;
+          width: 510px;
+          flex-direction: column;
+          background: #35068c;
+          backdrop-filter: blur(4px);
+          border-radius: 16px;
+          padding: 25px 35px;
+
+          &-sect1 {
+            display: flex;
+            justify-content: flex-end;
+            p {
+              margin-left: 62px;
+            }
+          }
+
+          &-sect2 {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 5px;
+            &-cry {
+              display: flex;
+              align-items: center;
+              
+              img {
+                width: 40px;
+                height: 40px;
+                margin-right: 16px;
+              }
+            }
+            &-price {
+              margin-left: 15px;
+            }
+            .red {
+              color: #FF7676;
+            }
+            &-change {
+              display: flex;
+              align-items: center;
+              margin-left: 5px;
+              color:  #8FFFBE;
+        
+              img{
+                width:16px;
+                height: 16px;
+                margin-right: 8px;
+              }
+            }
+
+            &-volume {
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// --/Features--
 
 
 //--Cryptocurrencies
@@ -472,4 +607,5 @@ body {
     }
   }
   // --/Section-why--
+
 

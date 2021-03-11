@@ -31,11 +31,30 @@ body {
 .wrapper-white {
   background-color: #f8f9fb; }
 
+.wrapper-secondary {
+  background-color: #2b076e; }
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px; }
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  right: 180px;
+  align-self: flex-start; }
+  .reverse .section-feature-content-item-desc {
+    margin-right: 0px;
+    margin-left: 50px; }
+
+.offset-to-left {
+  position: relative;
+  right: 72px;
+  background-color: #4610AD;
+  border-radius: 16px; }
 
 .section-header {
   padding-top: 70px;
@@ -149,6 +168,14 @@ body {
   background-color: #0d0d2b; }
 
 
+.section-feature {
+  background-color: #2b076e;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-feature-header {
+
+
 .section-cryptocurrencies {
   padding-top: 316px;
   display: flex;
@@ -156,11 +183,88 @@ body {
   align-items: center; }
   .section-cryptocurrencies-header {
     color: black;
+
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
     text-align: center;
+
+    max-width: 750px;
+    margin-bottom: 100px; }
+  .section-feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .section-feature-content-item {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 120px;
+      flex-wrap: wrap; }
+      .section-feature-content-item-desc {
+        max-width: 450px;
+        margin-right: 50px;
+        margin-bottom: 20px; }
+        .section-feature-content-item-desc-header {
+          font-family: "Rubik", sans-serif;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 48px; }
+        .section-feature-content-item-desc-text {
+          max-width: 408px;
+          margin-top: 24px;
+          margin-bottom: 32px; }
+        .section-feature-content-item-desc button {
+          padding: 16px 32px;
+          background-color: #3671e9;
+          border-radius: 32px;
+          border: none;
+          color: white;
+          font-family: "Rubik", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px; }
+        .section-feature-content-item-desc-data {
+          display: flex;
+          width: 510px;
+          flex-direction: column;
+          background: #35068c;
+          backdrop-filter: blur(4px);
+          border-radius: 16px;
+          padding: 25px 35px; }
+          .section-feature-content-item-desc-data-sect1 {
+            display: flex;
+            justify-content: flex-end; }
+            .section-feature-content-item-desc-data-sect1 p {
+              margin-left: 62px; }
+          .section-feature-content-item-desc-data-sect2 {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 5px; }
+            .section-feature-content-item-desc-data-sect2-cry {
+              display: flex;
+              align-items: center; }
+              .section-feature-content-item-desc-data-sect2-cry img {
+                width: 40px;
+                height: 40px;
+                margin-right: 16px; }
+            .section-feature-content-item-desc-data-sect2-price {
+              margin-left: 15px; }
+            .section-feature-content-item-desc-data-sect2 .red {
+              color: #FF7676; }
+            .section-feature-content-item-desc-data-sect2-change {
+              display: flex;
+              align-items: center;
+              margin-left: 5px;
+              color: #8FFFBE; }
+              .section-feature-content-item-desc-data-sect2-change img {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px; }
+            .section-feature-content-item-desc-data-sect2-volume {
+              margin-left: 15px; }
+
     max-width: 740px;
     margin-bottom: 60px; }
   .section-cryptocurrencies-desc {
@@ -359,4 +463,5 @@ body {
       border: none; }
 
   
+
 
