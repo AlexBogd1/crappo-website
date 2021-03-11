@@ -225,6 +225,22 @@ body {
 
 // --Numbers--
 .section-numbers {
-  background-color: $primary-color;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .numbers-el {
+    display: flex;
+    align-items: center;
+    .num-el-img{
+        margin-right: 24px;
+    }
+    .num-el-desc{
+        .el-header{
+            @include rubik-header2;
+        }
+    }
+  }
 }
 // --/Numbers--

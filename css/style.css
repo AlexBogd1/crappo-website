@@ -145,4 +145,18 @@ body {
         line-height: 27px; }
 
 .section-numbers {
-  background-color: #0d0d2b; }
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section-numbers .numbers-el {
+    display: flex;
+    align-items: center; }
+    .section-numbers .numbers-el .num-el-img {
+      margin-right: 24px; }
+    .section-numbers .numbers-el .num-el-desc .el-header {
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px; }
