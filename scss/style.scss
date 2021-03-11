@@ -31,7 +31,7 @@
 
 @mixin rubik-bold {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 32px;
   line-height: 48px;
 }
@@ -245,6 +245,109 @@ body {
 }
 // --/Numbers--
 
+
+// --Calculated--
+.section-calculated {
+  background-color: $primary-color;
+  text-align: center;
+  padding-top: 100px;
+  .section-calculated-inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-header {
+      max-width: 740px;
+      @include rubik-header2;
+    }
+    &-desc {
+      max-width: 500px;
+      margin-top: 24px;
+    }
+  }
+}
+// --/Calculated--
+
+//--Calculated Form
+.section-calculated-form {
+  background-color: $neutral-light-color;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 940px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .calculated-form {
+    &-inputs {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &-text {
+        width: 400px;
+        background-color: $neutral-light-color;
+        color: black;
+        border: none;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 20px;
+        margin-left: 48px;
+        margin-right: 48px;
+      }
+
+      &-select {
+        width: 200px;
+        background-color: $neutral-light-color;
+        border: none;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 20px;
+        margin-right: 48px;
+      }
+
+      &-btn {
+        @include rubik-button;
+        color: white;
+        background-color: $button-color;
+        border-radius: 32px;
+        border: 0px;
+        padding: 16px 32px;
+      }
+    }
+
+    &-desc {
+      margin-top: 100px;
+      margin-left: 48px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      &-revenue {
+        color: #3671e9;
+        font-weight: 500;
+        margin-bottom: 0px;
+      }
+      &-value {
+        color: black;
+        @include rubik-bold;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        span {
+          color: #3671e9;
+        }
+      }
+      &-text {
+        color: black;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+//--/Calculated Form
+
 // --Section-why--
 .section-why {
     background-color: $primary-color;
@@ -285,3 +388,4 @@ body {
     }
   }
   // --/Section-why--
+
