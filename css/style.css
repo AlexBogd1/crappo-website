@@ -145,6 +145,8 @@ body {
         line-height: 27px; }
 
 .section-numbers {
+
+  background-color: #0d0d2b; }
   position: relative;
   z-index: 4;
   display: flex;
@@ -160,3 +162,39 @@ body {
       font-weight: 700;
       font-size: 40px;
       line-height: 60px; }
+.section-why {
+  background-color: #0d0d2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .section-why-img {
+    max-width: 580px; }
+  .section-why-inf {
+    display: flex;
+    max-width: 480px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .section-why-inf .section-why-header {
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      margin-bottom: 24px; }
+    .section-why-inf .section-why-desc {
+      margin-bottom: 30px; }
+    .section-why-inf .section-why-btn {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 32px;
+      background-color: #3671e9;
+      border: none; }
+
+  
+
