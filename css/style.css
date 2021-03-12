@@ -167,6 +167,56 @@ body {
 
   background-color: #0d0d2b; }
 
+.section-mining {
+  position: relative; }
+  .section-mining-class-img {
+    position: absolute; }
+    .section-mining-class-img-first {
+      top: 124px;
+      left: 35px; }
+    .section-mining-class-img-second {
+      top: 100px;
+      left: 390px; }
+  .section-mining .send-email-form {
+    position: relative;
+    background-color: #3671e9;
+    padding: 85px 88px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .section-mining .send-email-form .section-mining-img {
+      position: absolute; }
+    .section-mining .send-email-form .section-mining-img-vec {
+      left: 40px;
+      top: 0px; }
+    .section-mining .send-email-form .section-mining-img-btc {
+      right: 0px;
+      bottom: 0px; }
+    .section-mining .send-email-form-cont-header {
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      max-width: 501px;
+      margin-bottom: 16px; }
+    .section-mining .send-email-form-cont-inform {
+      max-width: 348px; }
+    .section-mining .send-email-form-input {
+      background-color: #3671e9;
+      border: none;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      width: 347px;
+      outline: none; }
+    .section-mining .send-email-form-input::placeholder {
+      color: white; }
+    .section-mining .send-email-form-btn {
+      padding: 14px 32px;
+      border-radius: 32px;
+      border: none;
+      font-weight: 500; }
+=======
 
 .section-footer .section-footer-gen-inf {
   display: flex;
